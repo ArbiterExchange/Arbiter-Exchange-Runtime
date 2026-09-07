@@ -189,8 +189,6 @@ arbiter> ag on
 arbiter> ag st
 ```
 
-Trading configuration and commands are documented in [`docs/DEX_TRADING.md`](docs/DEX_TRADING.md) and [`docs/QUICKSTART_SHELL.md`](docs/QUICKSTART_SHELL.md).
-
 ## Model providers
 
 Arbiter supports pluggable proposal models while keeping the model outside the signer trust domain.
