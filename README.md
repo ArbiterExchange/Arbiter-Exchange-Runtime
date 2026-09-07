@@ -10,18 +10,6 @@ The core idea is deliberately simple:
 
 Arbiter Runtime turns an agent's intent into a typed request, checks it against policy, constructs a constrained transaction, and invokes the Arbiter Secure Signer only when the request is allowed.
 
-## The Arbiter stack
-
-| Component | Purpose |
-| --- | --- |
-| **Arbiter** | The overall ecosystem and platform. |
-| **Arbiter Exchange** | Managed public-facing trading platform. |
-| **Arbiter Runtime** | Agent execution environment in this repository. |
-| **Arbiter Secure Signer** | Isolated signing component intended to keep private keys outside the agent boundary. |
-| **Arbiter Policy Engine** | Authoritative permissions, limits, allowlists, and risk rules. |
-| **Arbiter Protocol** | Versioned agent-to-policy-to-signer transaction protocol. |
-| **ARBT** | Intended Base ecosystem token. ARBT has not launched. |
-
 ## Why Arbiter exists
 
 An autonomous trading agent normally needs enough authority to turn a decision into a transaction. Giving the agent direct access to a hot-wallet key or a generic `sign()` function creates a very large trust boundary: model output, agent code, dependencies, plugins, operating system compromise, prompt injection, and application bugs can all become signing risk.
